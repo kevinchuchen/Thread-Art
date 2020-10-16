@@ -38,18 +38,18 @@ def crop(height,width,image,fileName):
     topEdge = int((height - minEdge)/2)
     leftEdge = int((width - minEdge)/2)
     imgCropped = image[topEdge:topEdge+minEdge, leftEdge:leftEdge+minEdge]
-    parent = os.path.dirname(fileName)
+    parent = os.path.dirname(os.path.abspath(fileName))
     return imgCropped
 
 # Show image
 def showImg(resized):
-    print("Done.. Showing Image Preview")
+    print("Done.. Showing Image Preview. Close the Image Preview to continue saving the output file")
     cv2.imshow("Image Preview", resized)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 #Make folder to store frames in main picture's directory
 def frameFolder(fileName,GIFflag):
-    parentFolder = os.path.dirname(fileName) #Move up one directory
+    parentFolder = os.path.dirname(os.path.abspath(fileName)) #Move up one directory
     frameDir = os.path.splitext(parentFolder)[0] + '\FRAMES'
     if GIFflag == True:
         try:
@@ -100,7 +100,6 @@ def pinCoordinates(PIN_NO, center, radius):
 
     return pinCoord
 ###################################################################################
-
 
 exitMessage = "Press Enter to exit"
 helpMessage = """
@@ -361,8 +360,3 @@ f.close()
 print('Completed!\n')
 input('Press Enter to exit')
 sys.exit()
-
-
-
-
-
