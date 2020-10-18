@@ -21,6 +21,6 @@ Note: File path must end with .jpg, .jpeg or .png extensions
 Code when run in Command Prompt:
 ![Screenshot](CMD.png)
 
-Feel free to <a href="mailto:contact@itskevcc.space">contact me</a> if you have any doubts or questions!
+Feel free to <a href="mailto:contact@itskevcc.space?subject=[Github:%20Thread%20Art]">contact me</a> if you have any doubts or questions!
 
 -Kev
