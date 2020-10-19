@@ -1,5 +1,5 @@
 # Thread-Art
-Simulation of string art using Python. To view full project details; visit [my website](https://itskevcc.space/2020/10/15/weaving-art/)
+Simulation of string art using Python. To view full project details; visit [my website](https://itskevcc.space/weaving-art/)
 
 To use, install the necessary libraries and run the script
 
